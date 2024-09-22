@@ -110,13 +110,13 @@ def query_horses(name: str, api_key: enumerate = ""):
 
 
 if __name__ == '__main__':
-    # print(race_detail_info(207660))
-    # print(racecards("2020-01-01"))
-    # print(results("2020-03-13"))
-    # print(horse_stats("230380"))
-    # print(jockeys_win_rate())
-    # print(trainers_win_rate())
-    # print(query_races())
-    print(query_horses(name="ZANAHIYR"))
+    print(race_detail_info(207660, api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(racecards("2020-01-01", api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(results("2020-03-13", api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(horse_stats("230380", api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(jockeys_win_rate(api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(trainers_win_rate(api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(query_races(api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(query_horses(name="ZANAHIYR", api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
 
     # pass

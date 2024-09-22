@@ -115,11 +115,11 @@ def list_feeds(
 
 
 if __name__ == "__main__":
-    # print(get_auto_suggestion("chicken soup"))
-    # print(get_recipes(0, 10))
-    # print(get_similar_recipes(123))
-    # print(get_more_info(123))
-    # print(load_tips(123,0,5))
-    # print(list_tags())
-    # print(list_feeds(0, 5, "+0700", True))
-    pass
+    print(get_auto_suggestion("chicken soup", api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(get_recipes(0, 10, api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(get_similar_recipes(123, api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(get_more_info(123, api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(load_tips(123,0,5, api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(list_tags(api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(list_feeds(0, 5, "+0700", True, api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    # pass

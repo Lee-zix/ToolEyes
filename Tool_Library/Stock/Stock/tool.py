@@ -99,9 +99,9 @@ def get_exchange_rate(from_currency: str, to_currency: str, key: str = ''):
 
 
 if __name__ == '__main__':
-    # print(options_data('aapl'))
+    # print(options_data('aapl', key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
     # print(get_today_date())
     # print(add_date('2023-02-19', 100))
-    print(get_daily_prices('600104.SHH', '2023-08-09'))
-    # print(get_open_info('Mainland China'))
-    # print(get_exchange_rate('USD','CNY'))
+    print(get_daily_prices('600104.SHH', '2023-08-09', key="F5ZV48VUA8PQQAE2"))
+    # print(get_open_info('Mainland China',key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    # print(get_exchange_rate('USD','CNY',key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))

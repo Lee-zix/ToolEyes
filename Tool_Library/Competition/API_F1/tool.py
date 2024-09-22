@@ -27,7 +27,7 @@ def timezone(
         "X-RapidAPI-Host": "api-formula-1.p.rapidapi.com"
     }
     url = "https://api-formula-1.p.rapidapi.com/timezone"
-    return get_response(url, headers)
+    return get_response(url, headers, params="")
 
 
 def seasons(
@@ -243,13 +243,13 @@ def rankings_races(
 
 
 if __name__ == '__main__':
-    # print(timezone())
-    # print(seasons())
-    # print(circuits(search="Australian"))
-    # print(competition(id=1))
-    # print(drivers(search="Lewi"))
-    # print(races(date="2021-12-12", type="Race"))
-    # print(teams(id=1))
-    # print(pit_stops(race=50))
-    # print(rankings_drivers(season=2021))
-    print(rankings_races(race=50))
+    print(timezone(api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(seasons(api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(circuits(search="Australian", api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(competition(id=1, api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(drivers(search="Lewi", api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(races(date="2021-12-12", type="Race", api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(teams(id=1, api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(pit_stops(race=50, api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(rankings_drivers(season=2021, api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(rankings_races(race=50, api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))

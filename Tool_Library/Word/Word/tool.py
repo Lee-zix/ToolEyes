@@ -94,16 +94,16 @@ def search_word(api_key: str = '', **kargs):
 
 
 if __name__ == '__main__':
-    # print(get_definition("type"))
-    # print(get_synonyms("hello"))
-    # print(get_antonyms("good"))
-    # print(get_examples('hello'))
-    # print(get_pronunciation('effect'))
-    # print(get_rhymes('dog'))
-    # print(get_frequency('hello'))
-    # print(search_word(letterPattern='^a.{4}$'))
-    # print(search_word(letters=6))
-    # print(search_word(get_pronunciationPattern='.*æm$'))
-    # print(search_word(sounds=4, limit=1))
-    # print(search_word(random=True, limit=1))
-    pass
+    print(get_definition("type", api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(get_synonyms("hello", api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(get_antonyms("good", api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(get_examples('hello', api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(get_pronunciation('effect', api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(get_rhymes('dog', api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(get_frequency('hello', api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(search_word(letterPattern='^a.{4}$', api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(search_word(letters=6, api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(search_word(get_pronunciationPattern='.*æm$', api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(search_word(sounds=4, limit=1, api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(search_word(random=True, limit=1, api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    # pass

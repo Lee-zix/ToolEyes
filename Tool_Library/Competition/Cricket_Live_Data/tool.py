@@ -75,10 +75,10 @@ def match_scorecard(match_id: int, api_key: enumerate = ""):
 
 
 if __name__ == '__main__':
-    # print(series())
-    # print(fixtures())
-    # print(fixtures_by_series(606))
-    # print(fixtures_by_date("2020-09-21"))
-    # print(results())
-    # print(results_by_date("2020-09-20"))
-    print(match_scorecard(2432999))
+    print(series(api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(fixtures(api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(fixtures_by_series(606, api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(fixtures_by_date("2020-09-21", api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(results(api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(results_by_date("2020-09-20", api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(match_scorecard(2432999, api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))

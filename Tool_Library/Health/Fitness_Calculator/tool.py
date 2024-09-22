@@ -224,15 +224,15 @@ def get_acitcity_met_values(
 
 
 if __name__ == "__main__":
-    # print(get_daily_calory_requirement(25, "male", 180, 70, "level_1"))
-    # print(get_calories_burned("bi_1", 25, 75))
-    # print(get_bmi(25, 180,75))
-    # print(get_macro_nutrients_amount(25, "male", 180, 70, 5, "extremelose"))
-    # print(get_body_fat_percentage(25, "male", 178, 70, 50, 96, 92))
-    # print(get_ideal_weight("male", 180))
-    # print(get_food_info("SR25_1_1"))
-    # print(get_foodtable_ids("Fo1_2"))
-    # print(get_subtable_names("Su10"))
-    # print(get_maintable_names())
-    # print(get_acitcity_met_values(1))
-    pass
+    print(get_daily_calory_requirement(25, "male", 180, 70, "level_1", api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(get_calories_burned("bi_1", 25, 75, api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(get_bmi(25, 180,75, api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(get_macro_nutrients_amount(25, "male", 180, 70, 5, "extremelose", api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(get_body_fat_percentage(25, "male", 178, 70, 50, 96, 92, api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(get_ideal_weight("male", 180,api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(get_food_info("SR25_1_1", api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(get_foodtable_ids("Fo1_2", api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(get_subtable_names("Su10", api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(get_maintable_names(api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(get_acitcity_met_values(1, api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    

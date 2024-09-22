@@ -3,7 +3,7 @@ import requests
 
 def get_response(url, kargs):
     headers = {
-        "X-RapidAPI-Key": "",
+        "X-RapidAPI-Key": "a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b",
         "X-RapidAPI-Host": "wft-geo-db.p.rapidapi.com"
     }
     response = requests.get(url, params=kargs, headers=headers)
@@ -50,7 +50,7 @@ def find_places(namePrefix: str = None, sort_by: str = None, limit: int = None, 
     kv_dict.append(('minPopulation', minPopulation))
     kv_dict.append(('maxPopulation', maxPopulation))
     kv_dict.append(('sort', sort_by))
-    return get_response(url, kv_dict)['data']
+    return get_response(url, kv_dict)
 
 
 def find_regions(countryId: str, limit: int = None, offset: int = None, namePrefix: str = None):
@@ -121,13 +121,13 @@ def get_university_infomation(name: str = None, country: str = None):
 
 
 if __name__ == '__main__':
-    pass
-    # print(find_countries(limit=5,offset=2))
-    # print(find_places(limit=2))
-    # print(find_regions(countryId="US",limit=5,offset=2))
-    # print(get_country_details(countryId="FR"))
-    # print(get_place_details(placeId=3710202))
-    # print(get_region_details(countryId="CN",regionCode="BJ"))
-    # print(get_currencies(countryId='US'))
-    # print(get_time_zone_date_time(zoneId="America__Marigot"))
-    # print(get_university_infomation(country='Ecuador'))
+    # pass
+    print(find_countries(limit=5,offset=2))
+    print(find_places(limit=2))
+    print(find_regions(countryId="US",limit=5,offset=2))
+    print(get_country_details(countryId="FR"))
+    print(get_place_details(placeId=3710202))
+    print(get_region_details(countryId="CN",regionCode="BJ"))
+    print(get_currencies(countryId='US'))
+    print(get_time_zone_date_time(zoneId="America__Marigot"))
+    print(get_university_infomation(country='Ecuador'))

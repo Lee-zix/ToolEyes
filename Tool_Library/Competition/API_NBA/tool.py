@@ -230,11 +230,11 @@ def standings(
 
 
 if __name__ == '__main__':
-    # print(seasons())
-    # print(games(season=2020))
-    # print(game_statistics(id=10403))
-    # print(teams(name="Lakers"))
-    # print(team_statistics(id=14, season=2020))
-    # print(players(team=1, season=2020))
-    # print(player_statistics(id=236, season=2020))
-    print(standings(league="standard", season=2021))
+    print(seasons(api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(games(season=2020, api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(game_statistics(id=10403, api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(teams(name="Lakers", api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(team_statistics(id=14, season=2020, api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(players(team=1, season=2020, api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(player_statistics(id=236, season=2020, api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
+    print(standings(league="standard", season=2021, api_key="a66d5c29b7msh5d13d2401681e5ap10e83fjsn0da541a8162b"))
